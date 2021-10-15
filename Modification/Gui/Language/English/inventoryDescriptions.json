@@ -1,0 +1,17 @@
+{
+	"d0b95be1-9d01-4c25-99cf-b07e245c308c" : {
+		"title" : "#429ef5Solar panel controller",
+		"description" : "#ffffffGets all the power from solar panels, which then gets used to produce batteries\n\nIn order to turn it on, at least 1 solar panel and a single switch should be connected to this part.\n\nMax sol. panels: #ffff0015#ffffff.",
+		"keywords" : ["STFU", "Sorz", "Сорз", "Questionable Mark"] 
+	},
+	"9646e3d9-275b-4dfc-8b73-77ed9b5e07d0" : {
+		"title" : "#429ef5Solar panel",
+		"description" : "#ffffffOutputs a logic signal at a daytime.",
+		"keywords" : ["STFU", "Sorz", "Сорз", "Questionable Mark"]
+	},
+	"acd2008e-828b-4b69-8aa8-c33e459f1456" : {
+		"title" : "#429ef5Speen Gen",
+		"description" : "#ffffffJust speed it right now...",
+		"keywords" : ["STFU", "Sorz", "Сорз"]
+	}
+}

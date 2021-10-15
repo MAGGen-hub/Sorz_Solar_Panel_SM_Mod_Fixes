@@ -1,0 +1,169 @@
+{
+	// acd2008e-828b-4b69-8aa8-c33e459f1456
+	"partList": [
+        {
+            "uuid": "acd2008e-828b-4b69-8aa8-c33e459f1456",
+            "name": "stfu_speen_gen",
+			"renderable": {
+				"lodList": [
+					{
+						"subMeshList": [
+							{
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_overheadcrane_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_overheadcrane_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_overheadcrane_nor.tga",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_overheadcrane_ao.tga"
+								],
+								"material": "DifAsgNorAo"
+							}
+						],
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/warehouse/obj_warehouse_overheadcranerope.fbx",
+						"includes": [
+							"POSITION",
+							"UV0",
+							"UV1",
+							"NORMAL",
+							"TANGENTS"
+						]
+					}
+				]
+			},
+			"color": "df7f01",
+            "scripted": {"filename": "$MOD_DATA/Scripts/speen_gen.lua", "classname": "SpeenGen"},
+			"cylinder": {
+				"diameter": 5,
+				"depth": 7,
+				"axis": "Y"
+			},
+			"rotationSet": "PropYNegZ",
+			"sticky": "+Y-Y+Z-Z",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"density": 9,
+				"durability": 1,
+				"friction": 2,
+				"buoyancy": 1
+			},
+			"flammable": true 
+		},
+		
+		{
+            "uuid": "9646e3d9-275b-4dfc-8b73-77ed9b5e07d0",
+            "name": "stfu_solar_panel",
+			"renderable": {
+				"lodList": [
+					{
+                        "subMeshList":[
+							{
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/Transparent_tex_dif.tga",
+                                    "$MOD_DATA/Objects/Textures/Transparent_tex_asg.tga",
+                                    "$MOD_DATA/Objects/Textures/nonor_nor.tga"
+                                ],
+                                "material": "DifAsgNor"
+                            },
+                            {
+                                "textureList": [
+                                    "$MOD_DATA/Objects/Textures/SolarPanel_dif.png",
+                                    "",
+                                    "$MOD_DATA/Objects/Textures/nonor_nor.tga"
+                                ],
+                                "material": "DifAsgNor"
+                            }
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/SolarPanel.obj"
+					}
+				]
+			},
+			"color": "df7f01",
+            "hull":{"x":1,"y":1,"z":1,"margin":0.05,
+                "pointList":[
+                    {"x":-1,"y":-1,"z":1},
+                    {"x":-1,"y":-0.2,"z":1},
+                    {"x":-1,"y":-1,"z":-1},
+                    {"x":-1,"y":-0.2,"z":-1},
+                    {"x":1,"y":-1,"z":1},
+                    {"x":1,"y":-0.2,"z":1},
+                    {"x":1,"y":-1,"z":-1},
+                    {"x":1,"y":-0.2,"z":-1}
+                ]
+            },
+            "scripted": {"filename": "$MOD_DATA/Scripts/solar_panel.lua", "classname": "Solar_Panel"},
+			"rotationSet": "PropYZ",
+			"physicsMaterial": "Mechanical",
+			"ratings": {"density": 8, "durability": 6, "friction": 5, "buoyancy": 1},
+			"flammable": false,
+			"stackSize": 1,
+			"density": 250.0
+		},
+		
+		{
+			"uuid": "d0b95be1-9d01-4c25-99cf-b07e245c308c",
+			"name": "stfu_solar_panel_controller",
+			"renderable": {
+				"lodList": [
+					{
+                        "subMeshList":[
+                            {
+                                "textureList":[
+                                    "$MOD_DATA/Objects/Textures/obj_interactive_controller_dif.tga",
+                                    "$MOD_DATA/Objects/Textures/obj_interactive_controller_asg.tga",
+                                    "$MOD_DATA/Objects/Textures/nonor_nor.tga"
+                                ],
+                                "material": "DifAsgNor"
+                            },
+                            {
+                                "textureList":[
+                                    "$MOD_DATA/Objects/Textures/panel_dif.tga",
+                                    "$MOD_DATA/Objects/Textures/panel_asg.tga",
+                                    "$MOD_DATA/Objects/Textures/nonor_nor.tga"
+                                ],
+                                "material":"UVAnimDifAsgNor",
+                                "custom":{"uv0":{"u":0.5,"v":0.001}}
+                            },
+                            {
+                                "textureList":[
+                                    "$MOD_DATA/Objects/Textures/Lights_dif.tga",
+                                    "$MOD_DATA/Objects/Textures/Lights_asg.tga",
+                                    "$MOD_DATA/Objects/Textures/nonor_nor.tga"
+                                ],
+                                "material": "PoseAnimDifAsgNor"
+                            },
+                            {
+                                "textureList":[
+                                    "$MOD_DATA/Objects/Textures/Lights_dif.tga",
+                                    "$MOD_DATA/Objects/Textures/Lights_asg.tga",
+                                    "$MOD_DATA/Objects/Textures/nonor_nor.tga"
+                                ],
+                                "material": "PoseAnimDifAsgNor"
+                            }
+						],
+						"mesh": "$MOD_DATA/Objects/Mesh/SolarPanel_controller.obj",
+						"pose0": "$MOD_DATA/Objects/Mesh/SolarPanel_controller_off.obj"
+					}
+				]
+			},
+			"color": "df7f01",
+			"hull":{"x":1,"y":1,"z":1,"margin":0.05,
+                "pointList":[
+                    {"x":-1,"y":-0.436022,"z":1},
+                    {"x":-1,"y":-0.436022,"z":-0.687088},
+                    {"x":-1,"y":-1,"z":1},
+                    {"x":-1,"y":-1,"z":-0.687088},
+                    {"x":1,"y":-0.436022,"z":1},
+                    {"x":1,"y":-0.436022,"z":-0.687088},
+                    {"x":1,"y":-1,"z":1},
+                    {"x":1,"y":-1,"z":-0.687088}
+                ]
+            },
+			"scripted": {"filename": "$MOD_DATA/Scripts/solar_panel_controller.lua", "classname": "SPController"},
+			"rotationSet": "PropYZ",
+			"physicsMaterial": "Mechanical",
+			"ratings": {"density": 3, "durability": 6, "friction": 4, "buoyancy": 1},
+			"flammable": false,
+			"stackSize": 256,
+			"density": 250.0
+		}
+	]
+}
