@@ -1,4 +1,4 @@
-# Soez_Solar_Panel_SM_Mod_Fixes
+# Sorz_Solar_Panel_SM_Mod_Fixes
 Форк с фиксами для мода Sorz и BATMax к игре Scrap Mechanic: https://steamcommunity.com/sharedfiles/filedetails/?id=2289139057&amp;searchtext=Functional+Utils
 
 Добавлено:
