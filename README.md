@@ -1,11 +1,11 @@
 # Sorz_Solar_Panel_SM_Mod_Fixes
-Форк с фиксами для мода Sorz и BATMax к игре Scrap Mechanic: https://steamcommunity.com/sharedfiles/filedetails/?id=2289139057&amp;searchtext=Functional+Utils
+Форк с фиксами для мода Sorz к игре Scrap Mechanic: https://steamcommunity.com/sharedfiles/filedetails/?id=2289139057&amp;searchtext=Functional+Utils
 
 Добавлено:
 - Звук переключения при взаимодействии с контроллером
 - Анимация контроллера солнечных панелей при смене дня и ночи
 - Анимация лампочек включения/выключения контроллера
-- Возможность вращения контроллера и бвтврей по оси Z (для большего удобства)
+- Возможность вращения контроллера и батарей по оси Z (для большего удобства)
 
 Исправленно:
 - Кривое положение контроллера батарей
